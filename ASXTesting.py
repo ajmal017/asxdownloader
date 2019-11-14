@@ -5,8 +5,6 @@ import os
 
 from collections import OrderedDict
 import operator
-from indicators import *
-from marketScans import *
 
 url = 'https://www.asx.com.au/asx/research/ASXListedCompanies.csv'
 market = pd.read_csv(url,header=1)
@@ -19,14 +17,14 @@ pathHourly = os.path.expanduser('~') + '/TradingHistoryASX/Hourly/'
 pathDaily = os.path.expanduser('~') + '/TradingHistoryASX/Daily/'
 pathWeekly = os.path.expanduser('~') + '/TradingHistoryASX/Weekly/'
 
-period = ['2y','10y','max']
+period = ['1y','10y','max']
 path = [pathHourly,pathDaily,pathWeekly]
 interval = ['1h','1d','1wk']
 
 # Using the index of 0, 1 and 2 we can respectively select the entries in period, path and interval that correspond with
 # the desired file path, ticker length and historical data duration that we would like to download
 #
-# e.g. to download 2 years worth of hourly ASX historical data we simply set x = 0 when running our download function: asxDownloader(0)
+# e.g. to download 1 year worth of hourly ASX historical data we simply set x = 0 when running our download function: asxDownloader(0)
 # to download 10 years worth of daily ASX historical data we simply set x = 1 when running our download function: asxDownloader(1)
 # to download all of the weekly ASX historical data we simply set x = 2 when running our download function: asxDownloader(2)
 
