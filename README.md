@@ -15,3 +15,6 @@ from ASXTesting import asxDownloader
 # asxDownloader(1) gives 1 years worth of daily historical data
 # asxDownloader(2) gives all of the weekly historical data
  ```
+
+# Dependencies
+   asxdownloader depends on the yfinance module which can be installed using the bash commands stipulated on the [yfinance](https://github.com/ranaroussi/yfinance) repo.
