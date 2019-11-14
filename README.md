@@ -6,4 +6,4 @@ The basic premise is fairly simple - download all the ASX stocks and do a filter
 
 Usage: 
 
-from ASXTesting import asxDownloader
+  from ASXTesting import asxDownloader
