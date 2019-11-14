@@ -74,5 +74,3 @@ def asxDownloader(x):
 
 	for i in range(0,len(market)):
 		data[market['ASX code'][i] + '.AX'].to_csv(path[x] + market['ASX code'][i] + '_AX.csv',encoding='utf-8')
-
-asxDownloader(1)
