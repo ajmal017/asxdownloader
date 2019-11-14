@@ -1,8 +1,3 @@
-import os
-import pandas as pd
-import operator
-from indicators import movingAverage
-
 def MAscanner(short,multiple,window,path):
     tickers = []
     percentages = []
