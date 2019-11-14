@@ -1,6 +1,11 @@
+import os
+import operator
+from indicators import movingAverage
+
 def MAscanner(short,multiple,window,path):
     tickers = []
     percentages = []
+    long = short * multiple
 
     for i in range(len(os.listdir(path))):
         x = pd.read_csv(path + os.listdir(path)[i])
