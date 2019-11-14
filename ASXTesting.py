@@ -21,7 +21,7 @@ pathWeekly = os.path.expanduser('~') + '/TradingHistoryASX/Weekly/'
 
 period = ['1y','10y','max']
 path = [pathHourly,pathDaily,pathWeekly]
-interval = ['1h','1d','1wk']
+interval = ['60m','1d','1wk']
 
 # Using the index of 0, 1 and 2 we can respectively select the entries in period, path and interval that correspond with
 # the desired file path, ticker length and historical data duration that we would like to download
