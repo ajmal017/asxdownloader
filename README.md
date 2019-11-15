@@ -11,8 +11,8 @@ Import the module for use in historical data storage
 ```python
 from ASXTesting import asxDownloader
 
-# asxDownloader(0) gives 2 years worth of hourly historical data
-# asxDownloader(1) gives 1 years worth of daily historical data
+# asxDownloader(0) gives 1 year worth of hourly historical data
+# asxDownloader(1) gives 10 years worth of daily historical data
 # asxDownloader(2) gives all of the weekly historical data
  ```
 
